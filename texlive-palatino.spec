@@ -1,12 +1,12 @@
-# revision 21993
+# revision 31835
 # category Package
 # catalog-ctan /fonts/urw/base35
-# catalog-date 2011-03-01 21:42:17 +0100
+# catalog-date 2012-06-06 22:57:48 +0200
 # catalog-license gpl
 # catalog-version undef
 Name:		texlive-palatino
-Version:	20110301
-Release:	2
+Version:	20120606
+Release:	1
 Summary:	URW "Base 35" font pack for LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/urw/base35
@@ -131,21 +131,6 @@ Symbol); - URW Bookman; - URW Chancery L Medium Italic
 %{_texmfdistdir}/fonts/tfm/adobe/palatino/zppler7t.tfm
 %{_texmfdistdir}/fonts/tfm/adobe/palatino/zppler7v.tfm
 %{_texmfdistdir}/fonts/tfm/adobe/palatino/zppler7y.tfm
-%{_texmfdistdir}/fonts/tfm/cspsfonts-adobe/palatino/pplb8z.tfm
-%{_texmfdistdir}/fonts/tfm/cspsfonts-adobe/palatino/pplbc8z.tfm
-%{_texmfdistdir}/fonts/tfm/cspsfonts-adobe/palatino/pplbi8z.tfm
-%{_texmfdistdir}/fonts/tfm/cspsfonts-adobe/palatino/pplr8z.tfm
-%{_texmfdistdir}/fonts/tfm/cspsfonts-adobe/palatino/pplrc8z.tfm
-%{_texmfdistdir}/fonts/tfm/cspsfonts-adobe/palatino/pplri8z.tfm
-%{_texmfdistdir}/fonts/tfm/cspsfonts-adobe/palatino/rpplb.tfm
-%{_texmfdistdir}/fonts/tfm/cspsfonts-adobe/palatino/rpplbi.tfm
-%{_texmfdistdir}/fonts/tfm/cspsfonts-adobe/palatino/rpplbu.tfm
-%{_texmfdistdir}/fonts/tfm/cspsfonts-adobe/palatino/rpplr.tfm
-%{_texmfdistdir}/fonts/tfm/cspsfonts-adobe/palatino/rpplri.tfm
-%{_texmfdistdir}/fonts/tfm/cspsfonts-adobe/palatino/rpplro.tfm
-%{_texmfdistdir}/fonts/tfm/cspsfonts-adobe/palatino/rpplrre.tfm
-%{_texmfdistdir}/fonts/tfm/cspsfonts-adobe/palatino/rpplrrn.tfm
-%{_texmfdistdir}/fonts/tfm/cspsfonts-adobe/palatino/rpplru.tfm
 %{_texmfdistdir}/fonts/tfm/urw35vf/palatino/uplb7t.tfm
 %{_texmfdistdir}/fonts/tfm/urw35vf/palatino/uplb8c.tfm
 %{_texmfdistdir}/fonts/tfm/urw35vf/palatino/uplb8r.tfm
@@ -247,12 +232,6 @@ Symbol); - URW Bookman; - URW Chancery L Medium Italic
 %{_texmfdistdir}/fonts/vf/adobe/palatino/zppler7t.vf
 %{_texmfdistdir}/fonts/vf/adobe/palatino/zppler7v.vf
 %{_texmfdistdir}/fonts/vf/adobe/palatino/zppler7y.vf
-%{_texmfdistdir}/fonts/vf/cspsfonts-adobe/palatino/pplb8z.vf
-%{_texmfdistdir}/fonts/vf/cspsfonts-adobe/palatino/pplbc8z.vf
-%{_texmfdistdir}/fonts/vf/cspsfonts-adobe/palatino/pplbi8z.vf
-%{_texmfdistdir}/fonts/vf/cspsfonts-adobe/palatino/pplr8z.vf
-%{_texmfdistdir}/fonts/vf/cspsfonts-adobe/palatino/pplrc8z.vf
-%{_texmfdistdir}/fonts/vf/cspsfonts-adobe/palatino/pplri8z.vf
 %{_texmfdistdir}/fonts/vf/urw35vf/palatino/uplb7t.vf
 %{_texmfdistdir}/fonts/vf/urw35vf/palatino/uplb8c.vf
 %{_texmfdistdir}/fonts/vf/urw35vf/palatino/uplb8t.vf
@@ -291,17 +270,3 @@ Symbol); - URW Bookman; - URW Chancery L Medium Italic
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar dvips fonts tex %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20110301-2
-+ Revision: 754636
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20110301-1
-+ Revision: 719184
-- texlive-palatino
-- texlive-palatino
-- texlive-palatino
-- texlive-palatino
-
