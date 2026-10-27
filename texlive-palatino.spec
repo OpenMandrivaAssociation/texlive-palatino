@@ -3,7 +3,7 @@
 
 Name:		texlive-%{tl_name}
 Version:	%{tl_revision}
-Release:	1
+Release:	2
 Summary:	URW Base 35 font pack for LaTeX
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/fonts/urw/base35
@@ -32,3 +32,5 @@ cat > %{buildroot}%{_texmf_updmap_d}/%{tl_name} <<'TL_DROPIN_EOF'
 # from palatino:
 Map upl.map
 TL_DROPIN_EOF
+echo '%dir %{_texmf_updmap_d}' >> %{specpartsdir}/%{name}.files.specpart
+echo '%{_texmf_updmap_d}/%{tl_name}' >> %{specpartsdir}/%{name}.files.specpart
